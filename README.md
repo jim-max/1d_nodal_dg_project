@@ -6,24 +6,24 @@
 ## Introduction
 
 This code provides a nodal discontinuous Galerkin (DG) diszretization for one-dimensional reaction–diffusion PDEs of the (loosely formulated!) form
-$$
+```math
 \begin{align*}
 \partial_t u - \nabla \cdot (\kappa \, \nabla u) + \mu u &= f,  && \text{ in } \Omega, \\
 u &= g, && \text{ on } \partial\Omega,
 \end{align*}
-$$
+```
 with the weak form
-$$
+```math
 u^{n+1} - u^{n} + \Delta t \, a(u^{n+1}, v) = \Delta t \, \int_{\Omega} f v.
-$$
+```
 The discretization is inspired by [1] (Section 4.6.2), which corresponds roughly to
-$$
+```math
 \begin{align*}
 a(u, v_h) =& \int_{\Omega} \kappa \, \nabla_{h} u \cdot \nabla_{h} v_h
           + \sum_{F \in \mathcal{F}_h} \eta \, \gamma_{\kappa,F, h_{F}} \int_{F} [\![u]\!] \, [\![v_h]\!]  \\
           &- \sum_{F \in \mathcal{F}_h} \int_{F} \bigl(  \{\!\{  \kappa \, \nabla_{h} u \}\!\} \cdot \mathbf{n}_{F} \, [\![v_h]\!]   +   [\![u]\!] \, \{\!\{  \kappa \, \nabla_{h} v_h \}\!\} \cdot \mathbf{n}_{F}   \bigr).
 \end{align*}
-$$
+```
 
 
 ## Installation
