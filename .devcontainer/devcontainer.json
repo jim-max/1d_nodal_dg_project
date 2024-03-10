@@ -1,0 +1,22 @@
+{
+	"name": "diffusion_model_container",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"cpp.editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+				"C_Cpp.intelliSenseEngine": "disabled",
+				"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+				"clangd.path": "clangd"
+			},
+			"extensions": [
+				"llvm-vs-code-extensions.vscode-clangd",
+				"twxs.cmake",
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack"
+			]
+		}
+	}
+}

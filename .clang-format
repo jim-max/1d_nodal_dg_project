@@ -1,0 +1,26 @@
+# ---
+BasedOnStyle: LLVM
+IndentWidth: 2
+ColumnLimit: 100
+# ---
+Language: Cpp
+SortIncludes: true
+SortUsingDeclarations: true
+PointerAlignment: Middle
+ReferenceAlignment: Middle
+SpaceAfterCStyleCast: true
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: true
+EmptyLineAfterAccessModifier: Always
+EmptyLineBeforeAccessModifier: LogicalBlock
+UseTab: Never
+IndentPPDirectives: BeforeHash
+AlignTrailingComments: false
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeTernaryOperators: true
+NamespaceIndentation: All
+ReflowComments: false
+AllowShortFunctionsOnASingleLine: Empty
+IncludeBlocks : Preserve # Regroup
+# ---
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html

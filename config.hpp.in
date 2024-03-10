@@ -1,0 +1,9 @@
+#cmakedefine Eigen3_FOUND @Eigen3_FOUND@
+#cmakedefine OPENMP_FOUND @OPENMP_FOUND@
+#cmakedefine Boost_FOUND @Boost_FOUND@
+#cmakedefine fmt_FOUND @fmt_FOUND@
+
+#cmakedefine CMAKE_CXX_COMPILER_IS_GCC @CMAKE_CXX_COMPILER_IS_GCC@
+#cmakedefine CMAKE_CXX_COMPILER_IS_CLANG @CMAKE_CXX_COMPILER_IS_CLANG@
+
+#cmakedefine CMAKE_CXX_STANDARD @CMAKE_CXX_STANDARD@
